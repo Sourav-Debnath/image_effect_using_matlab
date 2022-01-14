@@ -2,15 +2,18 @@
 ## Tools
 * Matlab
 
+## Contributor
+* Sourav Debnath
+
 ## Methods
 For every image effects I used different methods. I am giving a brief description of the way I did the work.
 
 *	Posterize:
 For posterizing the image, I selected 8 different colors. Every color is ranged here:
- 15(0	31)    47(32	63)	     79(64	95)    111(96	127)
-  143(128	159)    	175(160	191)    207(192	223)    239(224	255)			
+15(0	31), 47(32	63), 79(64	95), 111(96	127)
+143(128	159), 175(160	191), 207(192	223), 239(224	255)			
 
-For input value ranged (0-31) the output image got a value of 15. Same goes for the others.
+ For input value ranged (0-31) the output image got a value of 15. Same goes for the others.
 
 *	Nightvision:
 For making a night vision effect, I used the formula given on the question: 
