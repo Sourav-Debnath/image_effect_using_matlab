@@ -1,4 +1,8 @@
 # image_effect_using_matlab
+## Tools
+* Matlab
+
+## Methods
 For every image effects I used different methods. I am giving a brief description of the way I did the work.
 
 a.	Posterize:
