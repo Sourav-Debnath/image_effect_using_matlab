@@ -31,3 +31,16 @@ To create vignetting effect on a picture, I first tried to find out the center p
  
 *	Mirror:
 To make the mirror effect, I simply flipped the indexing values of the rows from the picture.
+
+* Histogram Equalization:
+Histogram is an approximate representation of the distribution of numbers through bar graph. The intensity of image often viewed through a histogram. Sometimes, the histogram of an image is concentrated in one place which is not ideal. So we try to make the intensity more scattered. This is called histogram equalization.
+
+To equalize the histogram or intensity of an image I extract the histogram value of the input and applied the probability density function. Then calculated the CDF of every intensity level and converted it into a range of 0-255. Then I just changed the previous image intensity with new mapped intensity for every pixel and that gave me a equalized histogram.
+
+* Old Image:
+We often use vintage or old filter into our image. It’s basically manipulating the colors of the image to create an old image effect. I just split the image into red, green and blue channels and used a pre-defined formula that is proposed by Microsoft and the image color is manipulated.
+
+* Sketch:
+Sketch or pencil sketch is a very common image effect. To achieve sketch effect I used Sobel operation on the image that sharpens the image. First of all I converted the image into a grayscale image. Then applied horizontal and vertical sobel operators on the image. But the sobel inverts the color values. So I make a negative of the image and that gave me a sketch effect of the input image.
+
+* To get edge glow effect, I used the enhancing technique on the edge by using unsharp masking and highboost filtering on the image. First I smoothed the input image and subtract it from the input image to get the edges of the image. Then I multiplied the edge value and added it with the input image to get an edge glow effect.
